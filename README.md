@@ -1,29 +1,64 @@
+
 # ReactJS Project with Webpack and Tailwind CSS
 
-This is a boilerplate project setup for creating a ReactJS application with webpack for bundling and Tailwind CSS for styling.
+This is a boilerplate project setup for creating a ReactJS application with webpack for bundling and Tailwind CSS for styling
 
-## Getting Started
-To start the development server and run the application locally:
 
- npm start
+## Deployment
+
+To build this project run
+
+```bash
+  npm run build   
+```
+or 
+```bash
+yarn build
+```
+
+
+## Installation
+
+Install depandencies with npm
+
+```bash
+ cd react-boilerplate-demo
+ npm install
+ 
+```
+
+Install depandencies with yarn
+
+```bash
+ cd react-boilerplate-demo
+ yarn install 
+ 
+```
+    
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/MalickRehman/react-boilerplate-demo.git
+```
+
+Go to the project directory
+
+```bash
+  cd react-boilerplate-demo
+```
+
+
+
+Start the server
+
+```bash
+  npm  start
+```
 or
 
- yarn start
-1. Clone the repository:
+```bash
+  yarn  start
+```
 
-   ```bash
-   git clone https://github.com/MalickRehman/react-boilerplate-demo.git
-
-### Prerequisites
-
-Before you begin, ensure you have the following installed on your local machine:
-
-- Node.js: [Download & Install Node.js](https://nodejs.org/)
-- npm: npm is installed with Node.js. If you're using npm 5.2.0 or higher, you don't need to install anything else.
-- Yarn: (optional) [Download & Install Yarn](https://yarnpkg.com/)
-
-### Installation
-Install dependencies using npm:
- npm install
-or using Yarn:
- yarn install
