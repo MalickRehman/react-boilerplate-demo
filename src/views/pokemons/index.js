@@ -1,10 +1,11 @@
 import React from "react";
-import PokemonCards from "../../components/cards/PokemonCards";
+
+import PokemonsContainer from "../../containers/pokemons";
 
 function HomeView() {
   return (
     <div>
-      <PokemonCards />
+      <PokemonsContainer />
     </div>
   );
 }
