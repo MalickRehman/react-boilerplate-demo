@@ -1,11 +1,12 @@
 import React from "react";
 import { QueryClient, QueryClientProvider } from "react-query";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import PokemonsView from "./views/pokemons";
 import NotFound from "./views/pokemons/NotFound";
 
 import "./index.css";
+import AppLayout from "./layouts";
 
 // Create a new instance of QueryClient
 const queryClient = new QueryClient();
@@ -14,14 +15,16 @@ const queryClient = new QueryClient();
 function App() {
   return (
     // Provide the QueryClient instance to the entire application using QueryClientProvider
-    <QueryClientProvider client={queryClient}>
-      <Router>
-        <Routes>
-          <Route path="/" element={<PokemonsView />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Router>
-    </QueryClientProvider>
+    <AppLayout>
+      <QueryClientProvider client={queryClient}>
+        <Router>
+          <Switch>
+            <Route exact path="/" component={PokemonsView} />
+            <Route exact path="*" component={NotFound} />
+          </Switch>
+        </Router>
+      </QueryClientProvider>
+    </AppLayout>
   );
 }
 

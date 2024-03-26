@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Typography } from "@material-tailwind/react";
 
 function NavList() {
@@ -11,7 +12,7 @@ function NavList() {
         className="p-1 font-medium"
       >
         <a
-          href="#"
+          href="/1"
           className="flex items-center hover:text-blue-500 transition-colors"
         >
           demo
