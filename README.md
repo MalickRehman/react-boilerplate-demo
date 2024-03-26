@@ -4,9 +4,9 @@ This is a boilerplate project setup for creating a ReactJS application with webp
 
 ## Getting Started
 To start the development server and run the application locally:
-npm start
+```bash npm start
 or
-yarn start
+```bash yarn start
 1. Clone the repository:
 
    ```bash
@@ -22,6 +22,6 @@ Before you begin, ensure you have the following installed on your local machine:
 
 ### Installation
 Install dependencies using npm:
-npm install
+ ```bash npm install
 or using Yarn:
-yarn install
+```bash yarn install
